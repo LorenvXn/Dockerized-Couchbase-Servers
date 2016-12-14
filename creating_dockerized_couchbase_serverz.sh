@@ -14,10 +14,11 @@ EOF
 
 ./script.sh &> /etc/yum.repos.d/docker.repo
 printf "\n"
-echo "Configuration starting....."
+echo "Configuration starting......................"
 echo ".............Docker repo setup.............."
 cat /etc/yum.repos.d/docker.repo
 printf "\n"
+
 echo ".......Installing package and starting docker service............."
 sudo yum install docker-engine
 service docker start
@@ -26,8 +27,7 @@ echo ".......................Docker status........................"
 service docker status
 
 echo ">>>>>>Download couchbase package on physical machine<<<<<"
-curl -O
-http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-x86_64.rpm
+curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-1-x86_64.rpm
 
 rpm -i couchbase-release-1.0-1-x86_64.rpm
 echo "...............create docker cb1 couchbase.........."
