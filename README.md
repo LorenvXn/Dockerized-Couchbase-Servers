@@ -1,5 +1,6 @@
 # Dockerized-Couchbase-Servers
 
+``... I doubt it's working still, but good practice``
 Before creating Dockerized Couchbase servers,
 the script creates another script for repository, and extracting the CentOS version.
 
